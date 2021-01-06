@@ -9,6 +9,8 @@ group :test do
   gem 'rspec'
   gem 'vcr'
   gem 'webmock'
+  gem 'capybara'
+  gem 'simplecov'
 end
 
 group :development, :test do
