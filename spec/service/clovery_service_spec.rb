@@ -2,9 +2,9 @@ require 'spec_helper'
 
 RSpec.describe 'Cloverly Service' do
   it 'will return carbon data' do
-    distance = 55
+    trip_distance = 55
     fuel_efficiency = 25
-    response = CloverlyService.carbon_data(distance, fuel_efficiency)
+    response = CloverlyService.carbon_data(trip_distance, fuel_efficiency)
 
     expect(response).to be_a(Hash)
     expect(response).to have_key('slug')
