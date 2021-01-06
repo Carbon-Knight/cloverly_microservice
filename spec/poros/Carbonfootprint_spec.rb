@@ -22,6 +22,6 @@ RSpec.describe 'Carbonfootprint poro' do
 
     expect(carbon_footprint.equivalent_carbon_in_kg).to eq(response_data['equivalent_carbon_in_kg'])
     expect(carbon_footprint.currency).to eq(response_data['cost']['currency'])
-    expect(carbon_footprint.total).to eq(response_data['cost']['total'])
+    expect(carbon_footprint.total).to eq(response_data['cost']['total'].to_f)
   end
 end
