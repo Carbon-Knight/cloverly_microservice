@@ -149,7 +149,3 @@ Project Link: [Carbon Knight](https://github.com/Carbon-Knight)
 [issues-shield]: https://img.shields.io/github/issues/Jonathan-M-Wilson/rails-engine
 [issues-url]: https://github.com/Jonathan-M-Wilson/rails-engine/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[about-screenshot]: images/screenshot.png
-[dashboard-screenshot]: images/screenshot.png
-[movies-screenshot]: images/screenshot.png
-[viewing-party-form-screenshot]: images/screenshot.png
