@@ -3,6 +3,7 @@ gem 'faraday'
 gem 'fast_jsonapi'
 gem 'json'
 gem 'sinatra'
+gem 'rake'
 
 group :test do
   gem 'rspec'

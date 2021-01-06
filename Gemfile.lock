@@ -58,6 +58,7 @@ GEM
     rack (2.2.3)
     rack-protection (2.1.0)
       rack
+    rake (13.0.3)
     rexml (3.2.4)
     rspec (3.10.0)
       rspec-core (~> 3.10.0)
@@ -107,6 +108,7 @@ DEPENDENCIES
   figaro
   json
   pry
+  rake
   rspec
   sinatra
   travis
