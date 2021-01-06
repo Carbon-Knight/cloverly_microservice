@@ -1,5 +1,5 @@
 require 'figaro'
-require './lib/cloverly_service'
+require './lib/services/cloverly_service'
 
 Figaro.application = Figaro::Application.new(
   environment: 'production',
