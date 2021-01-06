@@ -4,13 +4,13 @@ require './config/environment'
 
 class CloverlyService
   def self.carbon_data(trip_distance, fuel_efficiency)
+    interpolated_json = {'distance':{'value':"#{trip_distance}",'units':'km'},'fuel_efficiency':{'value':"#{fuel_efficiency}",'units':'mpg','of':'gasoline'}}.to_json
     carbon_response = conn.post do |req|
       req.url '/2019-03-beta/estimates/vehicle'
-      req.body = '{"distance":{"value":"#{trip_distance}","units":"km"},"fuel_efficiency":{"value":"#{fuel_efficiency}","units":"mpg","of":"gasoline"}}'
+      req.body = interpolated_json
       req.headers['Content-Type'] = 'application/json'
       req.headers['Authorization'] = "Bearer public_key:#{ENV['CLOVERY_PUBLIC_KEY']}"
     end
-    require 'pry', binding.pry
     parse_it(carbon_response)
   end
 

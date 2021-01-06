@@ -17,5 +17,6 @@ RSpec.describe 'Cloverly Service' do
     expect(response['equivalent_carbon_in_kg']).to be_a(Float)
     expect(response['cost']['currency']).to be_a(String)
     expect(response['cost']['total']).to be_a(String)
+    require 'pry', binding.pry
   end
 end
