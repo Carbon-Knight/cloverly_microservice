@@ -1,5 +1,8 @@
 require 'figaro'
-require './lib/services/cloverly_service'
+require './lib/cloverly_microservice.rb'
+require './lib/services/cloverly_service.rb'
+require './lib/poros/carbonfootprint.rb'
+require './lib/serializers/carbonfootprint_serializer.rb'
 
 Figaro.application = Figaro::Application.new(
   environment: 'production',
