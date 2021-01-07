@@ -2,20 +2,21 @@ source 'https://rubygems.org'
 gem 'faraday'
 gem 'fast_jsonapi'
 gem 'json'
-gem 'sinatra'
 gem 'rake'
+gem 'sinatra'
 
 group :test do
+  gem 'capybara'
   gem 'rspec'
+  gem 'simplecov'
   gem 'vcr'
   gem 'webmock'
-  gem 'capybara'
-  gem 'simplecov'
 end
 
 group :development, :test do
   gem 'figaro'
   gem 'pry'
-  gem 'travis'
   gem 'rack-test'
+  gem 'rubocop'
+  gem 'travis'
 end
