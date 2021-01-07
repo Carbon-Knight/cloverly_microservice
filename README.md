@@ -140,12 +140,12 @@ Project Link: [Carbon Knight](https://github.com/Carbon-Knight)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[contributors-shield]: https://img.shields.io/github/contributors/Jonathan-M-Wilson/rails-engine
-[contributors-url]: https://github.com/Jonathan-M-Wilson/rails-engine/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Jonathan-M-Wilson/rails-engine
-[forks-url]: https://github.com/Jonathan-M-Wilson/rails-engine/network/members
-[stars-shield]: https://img.shields.io/github/stars/Jonathan-M-Wilson/rails-engine
-[stars-url]: https://github.com/Jonathan-M-Wilson/rails-engine/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Jonathan-M-Wilson/rails-engine
-[issues-url]: https://github.com/Jonathan-M-Wilson/rails-engine/issues
+[contributors-shield]: https://img.shields.io/github/contributors/Carbon-Knight/cloverly_microservice
+[contributors-url]: https://github.com/Carbon-Knight/cloverly_microservice/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Carbon-Knight/cloverly_microservice
+[forks-url]: https://github.com/Carbon-Knight/cloverly_microservice/network/members
+[stars-shield]: https://img.shields.io/github/stars/Carbon-Knight/cloverly_microservice
+[stars-url]: https://github.com/Carbon-Knight/cloverly_microservice/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Carbon-Knight/cloverly_microservice
+[issues-url]: https://github.com/Carbon-Knight/cloverly_microservice/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
