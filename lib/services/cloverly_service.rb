@@ -35,7 +35,7 @@ class CloverlyService
     def format_distance(trip_distance)
       {
         value: trip_distance.to_s,
-        units: 'km'
+        units: 'miles'
       }
     end
 

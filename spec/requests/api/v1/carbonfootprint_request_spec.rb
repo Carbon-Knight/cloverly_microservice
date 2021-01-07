@@ -5,7 +5,7 @@ RSpec.describe 'Cloverly Microservice API' do
     VCR.use_cassette('cloverly_vehicle_footprint_request') do
       get '/api/v1/carbonfootprint?fuel_efficiency=25&trip_distance=55'
     end
-    
+
     expect(last_response).to be_successful
 
     data = JSON.parse(last_response.body, symbolize_names: true)[:data]
