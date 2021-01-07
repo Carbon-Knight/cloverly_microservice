@@ -1,8 +1,7 @@
 require 'spec_helper'
-require 'cloverly_microservice.rb'
 
 RSpec.describe 'Cloverly Microservice API' do
-  it "can return car footprint data" do
+  it 'can return car footprint data' do
     get '/api/v1/carbonfootprint?fuel_efficiency=25&trip_distance=55'
 
     expect(last_response).to be_successful

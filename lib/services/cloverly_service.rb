@@ -7,7 +7,17 @@ class CloverlyService
     def carbon_data(trip_distance, fuel_efficiency)
       carbon_response = conn.post do |req|
         req.url '/2019-03-beta/estimates/vehicle'
-        req.body = JSON.generate('distance':{'value':"#{trip_distance}",'units':'km'},'fuel_efficiency':{'value':"#{fuel_efficiency}",'units':'mpg','of':'gasoline'})
+        req.body = JSON.generate(
+          distance: {
+            value: trip_distance.to_s,
+            units: 'km'
+          },
+          fuel_efficiency: {
+            value: fuel_efficiency.to_s,
+            units: 'mpg',
+            of: 'gasoline'
+          }
+        )
         req.headers['Content-Type'] = 'application/json'
         req.headers['Authorization'] = "Bearer public_key:#{ENV['CLOVERY_PUBLIC_KEY']}"
       end
@@ -17,7 +27,7 @@ class CloverlyService
     private
 
     def conn
-      Faraday.new(:url => 'https://api.cloverly.com')
+      Faraday.new(url: 'https://api.cloverly.com')
     end
 
     def parse_it(data)

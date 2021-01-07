@@ -1,5 +1,5 @@
 require 'sinatra'
-require './config/environment.rb'
+require './config/environment'
 
 get '/api/v1/carbonfootprint' do
   content_type :json
