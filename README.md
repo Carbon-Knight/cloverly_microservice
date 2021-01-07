@@ -52,15 +52,9 @@ This micro services uses the [Cloverly](https://www.cloverly.com/) API.  Read th
 
 This microservice is able to take in information about a particular trip and will provide the approximate carbon used for that trip in kilograms along with the cost to offset that carbon.  It does this by recieving query parameters from the [Carbon Knight Backend](https://github.com/Carbon-Knight/carbon-knight-back-end), makes a call to the Cloverly API using these parameters, and then packages up the API response and sends that back to the Carbon Knight Backend in the proper format.
 
-### To Dos
-
-- Fill in about the project with stuff about this microservice.
-- Are we going to be using Rspec, how will we handle testing and coverage?
--
-
-
 
 ### Built With
+
 
 * [Sinatra](https://github.com/sinatra/sinatra)
 * [Ruby](https://github.com/ruby/ruby)
