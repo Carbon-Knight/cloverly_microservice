@@ -6,7 +6,8 @@ get '/api/v1/carbonfootprint' do
   carbonfootprint = Carbonfootprint.new(
     CloverlyService.carbon_data(
       params[:trip_distance],
-      params[:fuel_efficiency]
+      params[:fuel_efficiency],
+      params[:fuel_type]
     )
   )
 

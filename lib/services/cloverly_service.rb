@@ -4,10 +4,10 @@ require './config/environment'
 
 class CloverlyService
   class << self
-    def carbon_data(trip_distance, fuel_efficiency)
+    def carbon_data(trip_distance, fuel_efficiency, fuel_type)
       carbon_response = conn.post do |req|
         req.url '/2019-03-beta/estimates/vehicle'
-        req.body = request_body(trip_distance, fuel_efficiency)
+        req.body = request_body(trip_distance, fuel_efficiency, fuel_type)
       end
       parse_it(carbon_response)
     end
@@ -25,10 +25,10 @@ class CloverlyService
       JSON.parse(data.body, sybolize_names: true)
     end
 
-    def request_body(trip_distance, fuel_efficiency)
+    def request_body(trip_distance, fuel_efficiency, fuel_type)
       JSON.generate(
         distance: format_distance(trip_distance),
-        fuel_efficiency: format_fuel_efficiency(fuel_efficiency)
+        fuel_efficiency: format_fuel_efficiency(fuel_efficiency, fuel_type)
       )
     end
 
@@ -39,11 +39,11 @@ class CloverlyService
       }
     end
 
-    def format_fuel_efficiency(fuel_efficiency)
+    def format_fuel_efficiency(fuel_efficiency, fuel_type)
       {
         value: fuel_efficiency.to_s,
         units: 'mpg',
-        of: 'gasoline'
+        of: fuel_type.to_s
       }
     end
   end

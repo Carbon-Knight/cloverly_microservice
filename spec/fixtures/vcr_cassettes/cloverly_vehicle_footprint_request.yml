@@ -5,7 +5,7 @@ http_interactions:
     uri: https://api.cloverly.com/2019-03-beta/estimates/vehicle
     body:
       encoding: UTF-8
-      string: '{"distance":{"value":"55","units":"km"},"fuel_efficiency":{"value":"25","units":"mpg","of":"gasoline"}}'
+      string: '{"distance":{"value":"55","units":"miles"},"fuel_efficiency":{"value":"25","units":"mpg","of":"gasoline"}}'
     headers:
       Content-Type:
       - application/json
@@ -23,7 +23,7 @@ http_interactions:
       message: Created
     headers:
       Date:
-      - Thu, 07 Jan 2021 03:02:06 GMT
+      - Thu, 07 Jan 2021 16:47:39 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -31,8 +31,8 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=dd1dca050286ece685d0f8380eac3fed71609988525; expires=Sat, 06-Feb-21
-        03:02:05 GMT; path=/; domain=.cloverly.com; HttpOnly; SameSite=Lax; Secure
+      - __cfduid=da1719e513009b9c0918a2d02d628bb051610038059; expires=Sat, 06-Feb-21
+        16:47:39 GMT; path=/; domain=.cloverly.com; HttpOnly; SameSite=Lax; Secure
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -46,20 +46,20 @@ http_interactions:
       Cf-Cache-Status:
       - DYNAMIC
       Cf-Request-Id:
-      - 077c64664400008552a0190000000001
+      - 077f583a32000003f8ac866000000001
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=8c%2BcP0ROg1c%2BW9puvZ7OnSC22oZqWjtaU%2BOhMEkcRfmX9HpmR4w5ajqYor40v6Kai3xelANzBHlWC95Jn6%2FUH79cI6C9f8%2BF37oEiERx%2FeU%2FCoWAOKT5Yzq5y5YF"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=t3dfjiCv8wLLBFozNv1KBDDs7Wok0lzs89TyPfYJVSc00Y9%2Bgfe%2FAcaTDz4KZPVYNqr8m4124zWIhDDfgKIgB8qeqIeadFrK0%2F4wXrkcGW6wsFo4qxDzx66Pehii"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 60da701d38c58552-ORD
+      - 60df29704f4903f8-ORD
     body:
       encoding: UTF-8
-      string: '{"slug":"20210107-11692429156af6c6ff996ff73a72a579","environment":"sandbox","state":"estimated","renewable_energy_certificate":{"slug":"bandirma-wind-power-plant-project-12-months-starting-01-2016-27d156","name":"Bandirma
+      string: '{"slug":"20210107-50070e7d70ddda9fda2e50530dbcbfbc","environment":"sandbox","state":"estimated","renewable_energy_certificate":{"slug":"bandirma-wind-power-plant-project-12-months-starting-01-2016-27d156","name":"Bandirma
         Wind Power Plant Project - 12 months starting 01/2016","city":"Bezirci","province":"Balikesir","country":"Turkey","renewable_type":"wind","total_capacity":"","latlng":{"x":40.3657972,"y":28.1479911},"technical_details":"The
         project activity is developed as a Gold Standard VER project. The wind farm
         includes a total of 20 VESTAS V 90 turbines at an installed capacity of 3
@@ -71,7 +71,7 @@ http_interactions:
         or 207.8 GWh/a (gross) for the entire wind park. Net power generation is expected
         to be 182.7 GWh/a. The wind park results in reducing CO2 emissions.","deprecated":"Use
         the offsets attribute. The renewable_energy_certificate attribute will be
-        removed in the next version."},"micro_rec_count":12153,"micro_units":12153,"offset":{"slug":"bandirma-wind-power-plant-project-12-months-starting-01-2016-27d156","name":"Bandirma
+        removed in the next version."},"micro_rec_count":19555,"micro_units":19555,"offset":{"slug":"bandirma-wind-power-plant-project-12-months-starting-01-2016-27d156","name":"Bandirma
         Wind Power Plant Project - 12 months starting 01/2016","registry_name":"Gold
         Standard","pretty_name":"Bandirma Wind Power Plant Project","city":"Bezirci","province":"Balikesir","country":"Turkey","offset_type":"Wind","offset_type_slug":"wind","total_capacity":"","latlng":{"x":40.3657972,"y":28.1479911},"technical_details":"The
         project activity is developed as a Gold Standard VER project. The wind farm
@@ -82,6 +82,6 @@ http_interactions:
         the site as suitable for the erection and operation of a wind park. The expected
         power generation for 60 MW installed capacity is 10.4 GWh/a for each turbine
         or 207.8 GWh/a (gross) for the entire wind park. Net power generation is expected
-        to be 182.7 GWh/a. The wind park results in reducing CO2 emissions.","available_carbon_in_kg":1536376.156,"pretty_url":"https://dashboard.cloverly.com/offsets/bandirma-wind-power-plant-project-12-months-starting-01-2016-27d156"},"total_cost_in_usd_cents":28,"estimated_at":"2021-01-07T03:02:05.777Z","equivalent_carbon_in_kg":12.153,"electricity_in_kwh":0.0,"rec_cost_in_usd_cents":3,"transaction_cost_in_usd_cents":25,"cost":{"currency":"USD","total":"0.28","transaction":"0.25","offset":"0.03"},"pretty_url":"https://dashboard.cloverly.com/receipt/20210107-11692429156af6c6ff996ff73a72a579"}'
-  recorded_at: Thu, 07 Jan 2021 03:02:06 GMT
+        to be 182.7 GWh/a. The wind park results in reducing CO2 emissions.","available_carbon_in_kg":1536048.764,"pretty_url":"https://dashboard.cloverly.com/offsets/bandirma-wind-power-plant-project-12-months-starting-01-2016-27d156"},"total_cost_in_usd_cents":29,"estimated_at":"2021-01-07T16:47:39.737Z","equivalent_carbon_in_kg":19.555,"electricity_in_kwh":0.0,"rec_cost_in_usd_cents":4,"transaction_cost_in_usd_cents":25,"cost":{"currency":"USD","total":"0.28","transaction":"0.25","offset":"0.04"},"pretty_url":"https://dashboard.cloverly.com/receipt/20210107-50070e7d70ddda9fda2e50530dbcbfbc"}'
+  recorded_at: Thu, 07 Jan 2021 16:47:39 GMT
 recorded_with: VCR 6.0.0

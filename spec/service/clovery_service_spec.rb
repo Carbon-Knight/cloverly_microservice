@@ -4,9 +4,10 @@ RSpec.describe 'Cloverly Service' do
   it 'will return carbon data' do
     trip_distance = 55
     fuel_efficiency = 25
+    fuel_type = 'gasoline'
 
     VCR.use_cassette('cloverly_vehicle_footprint_request') do
-      response = CloverlyService.carbon_data(trip_distance, fuel_efficiency)
+      response = CloverlyService.carbon_data(trip_distance, fuel_efficiency, fuel_type)
 
       expect(response).to be_a(Hash)
       expect(response).to have_key('slug')

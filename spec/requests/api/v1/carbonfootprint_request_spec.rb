@@ -3,7 +3,7 @@ require 'spec_helper'
 RSpec.describe 'Cloverly Microservice API' do
   it 'can return car footprint data' do
     VCR.use_cassette('cloverly_vehicle_footprint_request') do
-      get '/api/v1/carbonfootprint?fuel_efficiency=25&trip_distance=55'
+      get '/api/v1/carbonfootprint?fuel_efficiency=25&trip_distance=55&fuel_type=gasoline'
     end
 
     expect(last_response).to be_successful
@@ -15,7 +15,7 @@ RSpec.describe 'Cloverly Microservice API' do
     expect(data[:cloverly_offset_cost]).to have_key(:currency)
     expect(data[:cloverly_offset_cost]).to have_key(:total)
 
-    expect(data[:equivalent_carbon_in_kg]).to eq(12.153)
+    expect(data[:equivalent_carbon_in_kg]).to eq(19.555)
     expect(data[:cloverly_offset_cost]).to be_an(Hash)
     expect(data[:cloverly_offset_cost][:currency]).to eq('USD')
     expect(data[:cloverly_offset_cost][:total]).to eq(0.28)
