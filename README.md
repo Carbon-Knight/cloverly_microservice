@@ -9,7 +9,7 @@
   <h3 align="center">Cloverly Microservice</h3>
 
   <p align="center">
-    This is a microservice that was built to (blank) for the Carbon Knight application.
+    This is a microservice that was built to provide information about carbon footprints  for the Carbon Knight application.
     <br />
     <a href="https://github.com/Carbon-Knight/cloverly_microservice"><strong>Explore the docs »</strong></a>
     <br />
@@ -48,6 +48,10 @@
 
 To view all the repositories associated with Carbon Knight, please visit [Carbon Knight](https://github.com/Carbon-Knight)
 
+This micro services uses the [Cloverly](https://www.cloverly.com/) API.  Read the API documentation [here](https://www.cloverly.com/carbon-offset-documentation.html) 
+
+This microservice is able to take in information about a particular trip and will provide the approximate carbon used for that trip in kilograms along with the cost to offset that carbon.  It does this by recieving query parameters from the [Carbon Knight Backend](https://github.com/Carbon-Knight/carbon-knight-back-end), makes a call to the Cloverly API using these parameters, and then packages up the API response and sends that back to the Carbon Knight Backend in the proper format.
+
 ### To Dos
 
 - Fill in about the project with stuff about this microservice.
@@ -73,9 +77,25 @@ To use the Cloverly Microservice locally, you can fork or clone [this](https://g
 1. ```git clone https://github.com/Carbon-Knight/cloverly_microservice.git```
 2. ```cd cloverly_microservice```
 3. ```bundle install```
+4. In the command line run ```ruby lib/cloverly_microservice.rb```  This will spin up your local server.
+5. In your browser paste in ```http://localhost:4567/api/v1/carbonfootprint?fuel_efficiency=25&trip_distance=80``` and you will see this response:
+  ```
+  {
+    "data": {
+      "equivalent_carbon_in_kg": 28.444,
+      "cloverly_offset_cost": {
+          "currency": "USD",
+          "total": 0.31
+      }
+    }
+  }
+  ```
 
+  The two parameters used in this call is `fuel_efficiency` and `trip_distance`.  From here you can edit these two parameters within the url to obtain your desired response
 
 ### Testing
+
+[RSpec](https://rspec.info/) was used for the testing of this project.
 
 Cloverly Microservice has been fully tested. To view the test coverage;
 
