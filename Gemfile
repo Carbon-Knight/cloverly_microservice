@@ -17,4 +17,5 @@ group :development, :test do
   gem 'figaro'
   gem 'pry'
   gem 'travis'
+  gem 'rack-test'
 end
