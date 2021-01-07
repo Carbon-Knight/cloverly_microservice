@@ -1,6 +1,8 @@
 require 'simplecov'
 require 'rspec'
 require 'rack/test'
+require 'webmock/rspec'
+require 'vcr'
 
 SimpleCov.start
 
@@ -20,3 +22,12 @@ module RSpecMixin
 end
 
 RSpec.configure { |c| c.include RSpecMixin }
+
+VCR.configure do |config|
+  config.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
+  config.hook_into :webmock
+  config.configure_rspec_metadata!
+  config.filter_sensitive_data('<CLOVERY_PUBLIC_KEY>') { ENV['CLOVERY_PUBLIC_KEY'] }
+  config.filter_sensitive_data('<CLOVERY_PRIVATE_KEY>') { ENV['CLOVERY_PRIVATE_KEY'] }
+  config.default_cassette_options = { record: :new_episodes }
+end
