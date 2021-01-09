@@ -4,6 +4,7 @@ gem 'fast_jsonapi'
 gem 'json'
 gem 'rake'
 gem 'sinatra'
+gem 'figaro'
 
 group :test do
   gem 'capybara'
@@ -14,7 +15,6 @@ group :test do
 end
 
 group :development, :test do
-  gem 'figaro'
   gem 'pry'
   gem 'rack-test'
   gem 'rubocop'
