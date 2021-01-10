@@ -1,4 +1,7 @@
 source 'https://rubygems.org'
+
+ruby '2.5.3'
+
 gem 'faraday'
 gem 'fast_jsonapi'
 gem 'json'
