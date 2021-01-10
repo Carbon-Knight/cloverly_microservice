@@ -1,5 +1,4 @@
 require 'faraday'
-require 'pry'
 require './config/environment'
 
 class CloverlyService
