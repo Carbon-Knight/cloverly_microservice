@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.cloverly.com/2019-03-beta/estimates/vehicle
+    body:
+      encoding: UTF-8
+      string: '{"distance":{"value":"10000000","units":"miles"},"fuel_efficiency":{"value":"25","units":"mpg","of":"gasoline"}}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer public_key:<CLOVERY_PUBLIC_KEY>
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Tue, 12 Jan 2021 22:40:45 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d8f9949cc4d707c87bb797fd4ebb719291610491245; expires=Thu, 11-Feb-21
+        22:40:45 GMT; path=/; domain=.cloverly.com; HttpOnly; SameSite=Lax; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Request-Method:
+      - "*"
+      Vary:
+      - Origin
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '079a5b4b030000c508f2bc8000000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=CRw2b%2BLA75cBHPAgqXrXrN4FJNPCcGCvh6%2FjnNA37Vs2u4SWZQS4EzdyeXiNDAQ69smbR4LbHC0yZ0fF49kUVGhe%2FUMaZVSrNHn6Vd814b3yYP4LRnSmLL0MNJiG"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 610a618b3f4ec508-ORD
+    body:
+      encoding: ASCII-8BIT
+      string: '{"error":"Cloverly does not have the necessary offset are available
+        to fulfill the request."}'
+  recorded_at: Tue, 12 Jan 2021 22:40:45 GMT
+recorded_with: VCR 6.0.0
