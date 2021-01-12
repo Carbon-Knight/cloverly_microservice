@@ -24,4 +24,15 @@ RSpec.describe 'Carbonfootprint poro' do
     expect(carbon_footprint.currency).to eq(response_data['cost']['currency'])
     expect(carbon_footprint.total).to eq(response_data['cost']['total'].to_f)
   end
+
+  it 'Makes an empty object with a cloverly error' do
+    response_data = {
+      "error": "Cloverly does not have the necessary offset are available to fulfill the request."
+    }
+    carbon_footprint = Carbonfootprint.new(response_data)
+
+    expect(carbon_footprint.equivalent_carbon_in_kg).to be nil
+    expect(carbon_footprint.currency).to be nil
+    expect(carbon_footprint.total).to be nil
+  end
 end
