@@ -93,7 +93,7 @@ To use the Cloverly Microservice locally, you can fork or clone [this](https://g
 
 Cloverly Microservice has been fully tested. To view the test coverage;
 
-Once inside your terminal within the Rails Engine directory run the following command.
+Once inside your terminal within the Cloverly Microservice directory run the following command.
 ```
 open coverage
 ```
