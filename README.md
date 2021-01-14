@@ -47,6 +47,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+Please visit the [Carbon Knight Front End](https://github.com/Carbon-Knight/Front-End) repository and check out the readme there for a more in depth look at this project!
 
 This microservice is able to take in information about a particular trip and will provide the approximate carbon used for that trip in kilograms along with the cost to offset that carbon.  It does this by recieving query parameters from the [Carbon Knight Backend](https://github.com/Carbon-Knight/carbon-knight-back-end), makes a call to the Cloverly API using these parameters, and then packages up the API response and sends that back to the Carbon Knight Backend in the proper format.
 
